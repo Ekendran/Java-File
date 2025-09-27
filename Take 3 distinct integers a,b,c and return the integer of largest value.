@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      System.out.println();
+      int A = s.nextInt();
+      System.out.println();
+      int B = s.nextInt();
+      System.out.println();
+      int C = s.nextInt();
+      if(A > B){
+        if(A > C){
+          System.out.println(A);
+        }
+        else{
+        }
+      }
+      else if(B > C){
+        System.out.println(B);
+      }
+      else{
+        System.out.println(C);
+      }
+  }
+}
