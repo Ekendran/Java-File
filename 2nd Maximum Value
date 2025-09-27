@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    int a[] = new int[n];
+	    int m1 = -1234, m2 = -12134;
+	    for(int i = 0; i < n; i++){
+	        a[i] = s.nextInt();
+	        m1 = Math.max(m1,a[i]);
+	    }
+	   for(int i = 0; i < n;i++){
+	       if(m2<a[i]&&a[i]!=m1){
+	           m2 = a[i];
+	       }
+	   }
+	   System.out.print(m2!=-12134?m2:"no 2nd max");
+	}
+}
